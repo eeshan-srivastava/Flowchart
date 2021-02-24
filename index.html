@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flowchart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body class="body">
+        <div  id="dialog_with_single_option" class="center">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title custom-font">Add new block</h5>
+                  <p class="card-text custom-font hor-margin ss">Select the type of block to be added</p>
+                  <div>
+                    <button id="d1_add_single_block" class="btn btn-primary btn-margin custom-font">Add single block</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div  id="dialog_with_two_option" class="center">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title custom-font">Add new block</h5>
+                  <p class="card-text custom-font hor-margin ss">Select the type of block to be added</p>
+                  <div>
+                    <button id="d2_add_single_block" class="btn btn-primary btn-margin custom-font">Add single block</a>
+                    <button id="d2_add_condition_block" class="btn btn-primary btn-margin custom-font aaa">Add condition block</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <main>
+            <div class="container-fluid">
+                <div id="root-block">
+                    <div class="row">
+                        <div class="col-12 box">
+                            <div class="vertical-center justify-content-center align-items-center  h-100 d-flex">
+                                <div  id="root-tag" class="flow-tag btn btn-light shadow-lg p-2 bg-white rounded">
+                                    <div id="delete-root-tag" class="mini-floating-button position-absolute delete-box">
+                                        <i class="material-icons" style="font-size:10px;color:white;">clear</i>
+                                    </div>
+                                    <span class="position-relative">Root</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 box-no-margin">
+                            <div class="vertical-center justify-content-center align-items-center  h-100 d-flex">
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 box-no-margin">
+                            <div id="open_dialog" class="vertical-center justify-content-center align-items-center  h-100 d-flex">
+                                <div class="floating-button">
+                                    <div class="material-icons">add</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    </body>
+</html>
